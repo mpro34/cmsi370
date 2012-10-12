@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html>
+   
+  <head>
+    <title> iTunes Websimilie! </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <link rel="stylesheet"
+        href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.min.css"/>
+	  <style type="text/css">
+		body {
+		  background-color: whitesmoke;
+		  font-family: "Lucinda Grande", Sans-serif;
+		} 
+		
+		.boxout {
+		  border-style: solid;
+		  border-width: 1px;
+		  border-color: gray;
+		  padding: 3px;
+		}
+		.left-task bar {
+		  font-family: "Lucinda Grande";
+		}
+		.gradient {
+		  background-image: -moz-linear-gradient(top, #EEE, #AAA);
+		  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EEE), color-stop(1, #AAA));
+		}
+		
+		.btn-group {
+		  position:absolute;
+		  top: 25px;
+		  left: 1000px;
+		}
+	
+		.span6 {
+		  position:absolute;
+		  top:18px;
+		  left:370px;
+		  padding: 0px;
+		  border-width: 0px;
+		}
+		#play {
+		  height:38px;
+		  width:38px;
+		  border-radius: 20px;
+		  text-align:center;
+		  border: 1px solid #7A7A82;
+		  background: #eeeeee; /* Old browsers */
+		  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		  background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		  background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+		}
+		#fast-forward {
+		  height:30px;
+		  width:30px;
+		  border-radius: 20px;
+		  text-align:center;
+		  border: 1px solid #7A7A82;
+		  background: #eeeeee; /* Old browsers */
+		  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		  background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		  background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+		}
+		#rewind {
+		  height:30px;
+		  width:30px;
+		  border-radius: 20px;
+		  text-align:center;
+		  border: 1px solid #7A7A82;
+		  background: #eeeeee; /* Old browsers */
+		  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		  background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		  background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+		}
+	    #justify {
+		  border-radius:20px;
+		  
+		}
+	/*
+		#play:active {
+		  background-color:red; 
+		  position:relative; 
+		  top:-45px; 
+		  left: 103px;
+		  no-repeat bottom;}
+		  background-color: #f7f7f7;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+		  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  color: #a7a7a7;
+		  margin: 10px; 
+		  width: 30px;
+		  height: 30px;
+		  position: relative;
+		  text-align: left;
+		  line-height: 30px;
+		  border-radius: 50%;
+		  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+		} */
+
+	  </style>
+  </head>
+  <body>
+  
+	  <div class="top menu-bar">
+	   <div class="boxout gradient">
+	
+		    <button id="rewind" class="btn btn-small" href="#" style="position:relative; left:36px; top:10px;"> </button> 
+			<button id="play" class="btn btn-small" href="#" style="position:relative; left:38px; top:10px;"> </button>
+			<button id="fast-forward" class="btn btn-small" href="#" style="position:relative; left:40px; top:10px;"> </button>
+	        <a href="#" style="position:absolute;top:5px;left:10px;color:black;"><small>File</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:40px;color:black;"><small>Edit</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:75px;color:black;"><small>View</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:115px;color:black;"><small>Controls</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:173px;color:black;"><small>Store</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:215px;color:black;"><small>Advanced</small></a>
+		    <a href="#" style="position:absolute;top:5px;left:281px;color:black;"><small>Help</small></a>
+			
+			<img style="position:relative; top:0px; left:282px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\TitleBar.png" alt="title bar" width="565" />
+			
+		    <form class="navbar-search pull-right">
+		      <i class="icon-search pull-right"></i><input type="text" class="input-medium search-query" placeholder="Search Music">
+		    </form> 
+	       <div id="justify" class="btn-group" >
+		      <button class="btn btn-mini"><i class="icon-align-justify"></i></button>
+		      <button class="btn btn-mini"><i class="icon-list"></i></button>
+		      <button class="btn btn-mini"><i class="icon-th"></i></button>
+		      <button class="btn btn-mini"><i class="icon-th-large"></i></button>
+			 <!-- <img style="position:relative; top:0px; left: -106px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\Title_buttons.png" alt="title bar buttons"/> -->
+		    </div> 
+		
+	     </div>				
+	  </div>				
+	  
+	  <div class="music content section">
+	    <div class="row">
+		  <img style="position:relative; top:0px; left: 163px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\music section.png" alt="music section"/>
+		</div>
+	  </div>
+	  
+	  <div class="left-task bar">
+		  <img style="position:relative; top:-584px; left: -217px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\left t-bar.png" alt="left menu bar"/>
+          <div class="span2" style="position:relative; left:-67px; top:-584px; background-color:#D6D6FF;">
+            <ul class="nav nav-list">
+	          <li class="nav-header" style="position:relative; left:30px;">LIBRARY </li>
+		      <li><a href="#" style="position:relative; top:-10px; padding-left:80px;font-size:11px;color:black;"> <strong>Music</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-15px; padding-left:80px;font-size:11px;color:black;"> <strong>Movies</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-20px; padding-left:80px;font-size:11px;color:black;"> <strong>TV Shows</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-26px; padding-left:80px;font-size:11px;color:black;"> <strong>Podcasts</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-32px; padding-left:80px;font-size:11px;color:black;"> <strong>Books</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-38px; padding-left:80px;font-size:11px;color:black;"> <strong>Apps</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-44px; padding-left:80px;font-size:11px;color:black;"> <strong>Tones</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-50px; padding-left:80px;font-size:11px;color:black;"> <strong>Radio</strong> </a></li>
+			  <li class="nav-header" style="position:relative; left:30px; top:-58px;">STORE</li>
+			  <li><a href="#" style="position:relative; top:-64px; padding-left:80px;font-size:11px;color:black;"> <strong>iTunes Store</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-70px; padding-left:80px;font-size:11px;color:black;"> <strong>Purchased</strong> </a></li>
+			  <li class="nav-header" style="position:relative; left:30px; top:-77px;">SHARED</li>
+			  <li class="nav-header" style="position:relative; left:30px; top:-86px;">GENIUS</li>
+			  <li><a href="#" style="position:relative; top:-94px; padding-left:80px;font-size:11px;color:black;"><strong>Genius</strong> </a></li>
+			  <li class="nav-header" style="position:relative; left:30px; top:-100px;">PLAYLISTS</li>
+			</ul>
+		  </div>
+	  </div>
+	  
+	  <div class="bottom task-bar">
+	    <div class="boxout gradient" style="position:relative; bottom:585px; padding:2px"> 
+	        <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:-170px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\plus.png" alt="plus icon" width="18" height="18"/></a>
+		    <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:-20px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\shuffle.png" alt="shuffle icon" width="20" height="20"/></a>
+		    <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:-20px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\replay.png" alt="replay icon" width="20" height="20"/></a>
+		    <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:-20px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\artwork.png" alt="artwork icon" width="20" height="20"/></a>
+		    <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:20px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\genius.png" alt="genius icon" width="20" height="20"/></a>
+		    <a href="#" class="btn btn-mini" style="padding:0px; position:relative; bottom:1px; left:20px"><img src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\sidebar.png" alt="sidebar icon" width="20" height="20"/></a>
+	    </div>
+	  </div>
+    	
+  </body>
+</html>

@@ -14,7 +14,10 @@
 	  <link rel="stylesheet" href="/resources/demos/style.css" />
 	  <script>
 	  $(function() {
-		  $( "#slider" ).slider();
+		  $( "#slider1" ).slider();
+	  });
+	   $(function() {
+		  $( "#slider2" ).slider();
 	  });
 	  </script>
 	  <style type="text/css">
@@ -41,7 +44,7 @@
 		  background-image: url(//CHRIS-PC/Users/Chris/cmsi370/websimilie/images/AB.jpg);
 		  background-size: 100% Auto;
 		  background-repeat: no-repeat;
-		  background-position:0px 50px;
+		  background-position:0px 65px;
 		  background-color:black;
 		  margin-left: 0px;
 		  margin-right: 0px;
@@ -49,12 +52,29 @@
 		  border-width:2px;
 		  border-color:black;
 		}
-		#slider {
+		.ui-slider-handle {
+		  width:100px;
+		  height:10px;
+		  position:relative;
+		}
+		#slider1 {
+		  background: rgb(89,89,89); /* Old browsers */
+		  background: -moz-linear-gradient(top, rgba(89,89,89,1) 12%, rgba(76,76,76,1) 96%, rgba(102,102,102,1) 97%, rgba(28,28,28,1) 98%, rgba(71,71,71,1) 98%, rgba(43,43,43,1) 100%, rgba(44,44,44,1) 100%, rgba(0,0,0,1) 100%, rgba(17,17,17,1) 100%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(89,89,89,1)), color-stop(96%,rgba(76,76,76,1)), color-stop(97%,rgba(102,102,102,1)), color-stop(98%,rgba(28,28,28,1)), color-stop(98%,rgba(71,71,71,1)), color-stop(100%,rgba(43,43,43,1)), color-stop(100%,rgba(44,44,44,1)), color-stop(100%,rgba(0,0,0,1)), color-stop(100%,rgba(17,17,17,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+		  background: -webkit-linear-gradient(top, rgba(89,89,89,1) 12%,rgba(76,76,76,1) 96%,rgba(102,102,102,1) 97%,rgba(28,28,28,1) 98%,rgba(71,71,71,1) 98%,rgba(43,43,43,1) 100%,rgba(44,44,44,1) 100%,rgba(0,0,0,1) 100%,rgba(17,17,17,1) 100%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+		  width:200px;
+		  height:8px;
+		  position:relative;
+		  left:60px;
+		}
+		#slider2 {
 		  background:gray;
 		  width:200px;
+		  height:8px;
 		  position:relative;
 		  left:90px;
 		}
+		
 		#music-controlMenu {
 		  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(99%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
@@ -62,8 +82,8 @@
 		  position:relative;
 		  left:30px;
 		  width:320px;
-		  padding-top:30px;
-		  padding-bottom:5px;
+		  padding-top:15px;
+		  padding-bottom:2px;
 		  border-style: transparent;
 		  border-width:1px;
 		  border-color:gray;
@@ -108,6 +128,7 @@
 	  </div>
 	<!-- Music Control Menu -->  
 	  <div id="music-controlMenu" class="row">
+	    <div id="slider1"></div>
 	    <i class="icon-random icon-white"></i>
 	  </div>
 	<!-- Play Buttons -->  
@@ -121,7 +142,7 @@
 	  </div>
 	<!-- Bottom Menu -->  
 	  <div id="bottom-Menu" class="row">
-	    <div id="slider"></div>
+	    <div id="slider2"></div>
 	  </div>
 	  
 	</div>

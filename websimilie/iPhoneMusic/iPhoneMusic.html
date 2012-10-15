@@ -35,8 +35,20 @@
 		  padding-top:7px;
 		  padding-bottom:7px;
 		  width:320px;
+		  height:32px;
 		  left:30px;
 		}
+		
+		#back-btn {
+		  position:relative;
+		  left:10px;
+		}
+		#album-btn {
+		  position:relative;
+		  right:10px;
+		  top:-75px;
+		}
+		
 		
 		.container {
 		  width: 320px;
@@ -110,19 +122,76 @@
 		  top:250px;
 		  background:black;
 		}
+		#logo {
+		  color:white;
+		  position:relative;
+		  left:10px;
+		}
+		#time {
+		  color:white;
+		  text-align:center;
+
+		}
+		#bat-percent {
+		  color:white;
+		  text-align:right;
+		}
+		.icon-signal {
+		  position:relative;
+		  left:35px;
+		}
+		p.artist { 
+		  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+          font-weight: 300;
+		  margin-top:-15px;
+		  position:relative;
+		  top:-23px;
+		  font-size:13px;
+		  text-align:center;
+		  color:#A3A3A3
+		}
+		p.song {
+		  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+          font-weight: 300;
+		  margin-top:-15px;
+		  position:relative;
+		  top:-23px;
+		  font-size:13px;
+		  text-align:center;
+		  color:white;
+		}
+		p.album {
+		  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+          font-weight: 300;
+		  position:relative;
+		  margin-top:-15px;
+		  position:relative;
+		  top:-24px;
+		  font-size:13px;
+		  text-align:center;
+		  color:#A3A3A3
+		}
 	  </style>
   </head>
   <body>
     <div id="iPhoneBackground" class="container">
 	  <div id="iPhoneStatus" class="row">
-	  4G
+	    <i class="icon-signal icon-white pull-left"></i>
+		<div id="logo" class="span1">AT&T 4G</div>
+		<div id="time" class="span1">7:06PM</div>
+		<div id="bat-percent" class="span1">48%</div>
+		<img style="position:relative; right:-7px; top:-2px;" src="//CHRIS-PC/Users/Chris/cmsi370/websimilie/images/battery.png" alt="battery" height="24" width="24"/>
+		
 	  </div>
 	<!-- Top Menu -->
 	  <div id="topMenu" class="row"> 
 		<button id="back-btn" class="btn btn-inverse">
 		  <i class="icon-arrow-left icon-white"></i>
 		</button>
-		<button id="album-btn" class="btn btn-inverse">
+		<p class="artist">Above & Beyond</p>
+		<p class="song">Thing Called Love</p>
+		<p class="album">Group Therapy</p>
+		<button id="album-btn" class="btn btn-inverse pull-right">
 		  <i class="icon-list icon-white"></i>
 		</button>
 	  </div>

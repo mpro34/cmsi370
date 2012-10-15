@@ -170,7 +170,7 @@
 		  width:100px;
 		  height:8px;
 		  position:relative;
-		  left:245px;
+		  left:260px;
 		  top:-25px;
 		  border-color:#4E4E4E
 		}
@@ -235,6 +235,17 @@
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
 		  background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
 	    }
+		#down {
+		  position:relative;
+		  left:-20px;
+		  top:-5px;
+		}
+		#up {
+		  position:relative;
+		  left:90px;
+		  top:-5px;
+		}
+		  
 	  </style>
   </head>
   <body>  
@@ -252,7 +263,14 @@
 			  <button id="play" class="btn btn-small" href="#"><i class="icon-play"></i></button>
 			  <button id="fast-forward" class="btn btn-small" href="#"><i class="icon-forward"></i></button>
 			</div>
-		    <div id="slider"></div>
+
+		    <div id="slider">
+			  <div class="volume">
+			    <i id="down" class="icon-volume-down"></i>
+			    <i id="up" class="icon-volume-up"></i>
+			  </div>
+			</div>
+			
 			<img style="position:relative; top:-72px; left:425px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\TitleBar.png" alt="title bar" width="570" class="img-rounded"/>
 		    <div id="justify" class="btn-group">
 		      <button class="btn btn-mini"><i class="icon-align-justify"></i></button>
@@ -275,23 +293,22 @@
 	  </div>
 	  
       <div id="left-task-bar" class="span2">
-		 <!-- <img style="position:relative; top:-584px; left: -217px;" src="\\CHRIS-PC\Users\Chris\cmsi370\websimilie\images\left t-bar.png" alt="left menu bar"/> -->
         <ul id="left-content" class="nav nav-list">
 	          <li class="nav-header" style="position:relative; left:-10px;">LIBRARY </li>
-		      <li><a href="#" style="position:relative; top:-10px; padding-left:40px;font-size:11px;color:black;"> <strong>Music</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-15px; padding-left:40px;font-size:11px;color:black;"> <strong>Movies</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-20px; padding-left:40px;font-size:11px;color:black;"> <strong>TV Shows</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-26px; padding-left:40px;font-size:11px;color:black;"> <strong>Podcasts</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-32px; padding-left:40px;font-size:11px;color:black;"> <strong>Books</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-38px; padding-left:40px;font-size:11px;color:black;"> <strong>Apps</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-44px; padding-left:40px;font-size:11px;color:black;"> <strong>Tones</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-50px; padding-left:40px;font-size:11px;color:black;"> <strong>Radio</strong> </a></li>
+		      <li><a href="#" style="position:relative; top:-10px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-music"></i>Music</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-15px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-20px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-26px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-32px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-book"></i>Books</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-38px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-44px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-50px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
 			  <li class="nav-header" style="position:relative; left:-10px; top:-58px;">STORE</li>
-			  <li><a href="#" style="position:relative; top:-64px; padding-left:40px;font-size:11px;color:black;"> <strong>iTunes Store</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-70px; padding-left:40px;font-size:11px;color:black;"> <strong>Purchased</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-64px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-70px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
 			  <li class="nav-header" style="position:relative; left:-10px; top:-77px;">SHARED</li>
 			  <li class="nav-header" style="position:relative; left:-10px; top:-86px;">GENIUS</li>
-			  <li><a href="#" style="position:relative; top:-94px; padding-left:40px;font-size:11px;color:black;"><strong>Genius</strong> </a></li>
+			  <li><a href="#" style="position:relative; top:-94px; padding-left:15px;font-size:11px;color:black;"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
 			  <li class="nav-header" style="position:relative; left:-10px; top:-100px;">PLAYLISTS</li>
 	    </ul>
 	  </div>

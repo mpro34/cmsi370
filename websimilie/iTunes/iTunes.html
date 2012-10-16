@@ -44,26 +44,7 @@
 		  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		} 
 		
-		#left-task-bar {
-		  width:150px;
-		  height:585px;
-		  position:relative;
-		  top:-584px;
-		  padding:0px;
-		  margin:0px;
-		  background:#D6D6FF;
-		}
-		
-		#bottom-task-bar {
-		  width:1396px;
-		  height:25px;
-		  border-style:transparent;
-		/*  border-top:solid black;*/
-		  background: rgb(245,246,246); /* Old browsers */
-		  background: -moz-linear-gradient(top, rgba(245,246,246,1) 0%, rgba(221,223,227,1) 22%, rgba(184,186,198,1) 100%, rgba(219,220,226,1) 100%, rgba(245,246,246,1) 100%); /* FF3.6+ */
-		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(22%,rgba(221,223,227,1)), color-stop(100%,rgba(184,186,198,1)), color-stop(100%,rgba(219,220,226,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
-		  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(221,223,227,1) 22%,rgba(184,186,198,1) 100%,rgba(219,220,226,1) 100%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
-		}
+	/*Defines the elements of the top menu bar*/
 		#topMenu {
 		  position:relative;
 		  padding-top:7px;
@@ -78,12 +59,13 @@
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(22%,rgba(221,223,227,1)), color-stop(100%,rgba(184,186,198,1)), color-stop(100%,rgba(219,220,226,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
 		  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(221,223,227,1) 22%,rgba(184,186,198,1) 100%,rgba(219,220,226,1) 100%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
 		}
-
+		/*Specifies a gradient when all <a> elements within the topMenu class are pressed down*/
 		a.down {
 		  background: rgb(181,189,200); /* Old browsers */
 		  background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
 		}
+		/*Defines the properties for the top justification icons*/
 		.btn-group {
 		  position:relative;
 		  top: -107px;
@@ -92,6 +74,7 @@
 		  padding:0px;
 		  margin:0px;
 		}
+		/*b1 through b4 further define properties for each individual top justification button*/
 		#b1 {
 		  		  background: rgb(245,246,246); /* Old browsers */
 		  background: -moz-linear-gradient(top, rgba(245,246,246,1) 0%, rgba(221,223,227,1) 22%, rgba(184,186,198,1) 100%, rgba(219,220,226,1) 100%, rgba(245,246,246,1) 100%); /* FF3.6+ */
@@ -116,6 +99,7 @@
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(22%,rgba(221,223,227,1)), color-stop(100%,rgba(184,186,198,1)), color-stop(100%,rgba(219,220,226,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
 		  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(221,223,227,1) 22%,rgba(184,186,198,1) 100%,rgba(219,220,226,1) 100%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
 		}
+		/*Customizes the bootstrap search bar*/
 		.navbar-search {
 		  margin-top:0px;
 		  margin-bottom:0px;
@@ -128,6 +112,7 @@
 		  background-repeat: no-repeat;
 		  background-position:1px 5px;
 	    }
+		/*Specifies a graident for the play button*/
 		#play {
 		  height:38px;
 		  width:38px;
@@ -143,6 +128,7 @@
 		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
 		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 		}
+		/*Specifies a graident for the fast-forward button*/
 		#fast-forward {
 		  height:30px;
 		  width:30px;
@@ -158,6 +144,7 @@
 		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
 		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 		}
+		/*Specifies a graident for the rewind button*/
 		#rewind {
 		  height:30px;
 		  width:30px;
@@ -173,29 +160,7 @@
 		  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
 		  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 		}
-	/*
-		#play:active {
-		  background-color:red; 
-		  position:relative; 
-		  top:-45px; 
-		  left: 103px;
-		  no-repeat bottom;}
-		  background-color: #f7f7f7;
-		  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-		  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-		  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-		  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-		  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-		  color: #a7a7a7;
-		  margin: 10px; 
-		  width: 30px;
-		  height: 30px;
-		  position: relative;
-		  text-align: left;
-		  line-height: 30px;
-		  border-radius: 50%;
-		  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
-		} */
+		/*Defines a slider with jQuery and customizes the slider.*/
 		.ui-slider .ui-slider-handle {
 		  width: 15px;
 		  height: 15px;
@@ -212,6 +177,18 @@
 		  top:-25px;
 		  border-color:#4E4E4E
 		}
+		/*Defines the propeties of the volume up and volume down icons on the top menu*/
+		#down {
+		  position:relative;
+		  left:-20px;
+		  top:-5px;
+		}
+		#up {
+		  position:relative;
+		  left:90px;
+		  top:-5px;
+		}
+		/*Changes the default bootstrap top menu options hover property*/
 		.row a {
 		  color:black;
 		  font-size:14px;
@@ -224,6 +201,7 @@
 		.row a:hover {
 		  background-color:gray;
 		}
+		/* Customizes the position of the play buttons*/
 		.playButtons {
 		  position:relative;
 		  top:0px;
@@ -231,11 +209,37 @@
 		  padding-top:0px;
 		  padding-bottom:0px;
 		}
+		/*Defines the position of the custom top search bar*/
 		#searchBar {
 		  position:relative;
 		  top:-130px;
 		  right:18px;
 		}
+		
+	/*Defines the elements of the left task bar*/
+		#left-task-bar {
+		  width:150px;
+		  height:565px;
+		  position:relative;
+		  top:-584px;
+		  padding:0px;
+		  margin:0px;
+		  background:#D6D6FF;
+		}
+
+	/*Defines the elements of the bottom task bar*/
+		#bottom-task-bar {
+		  width:1396px;
+		  height:25px;
+		  position:relative;
+		  bottom:20px;
+		  border-style:transparent;
+		  background: rgb(245,246,246); /* Old browsers */
+		  background: -moz-linear-gradient(top, rgba(245,246,246,1) 0%, rgba(221,223,227,1) 22%, rgba(184,186,198,1) 100%, rgba(219,220,226,1) 100%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(22%,rgba(221,223,227,1)), color-stop(100%,rgba(184,186,198,1)), color-stop(100%,rgba(219,220,226,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+		  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(221,223,227,1) 22%,rgba(184,186,198,1) 100%,rgba(219,220,226,1) 100%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+		}
+		/*The bot functions customize the properties of the buttons on the bottom task bar*/
 		#plus {
 		  position:relative;
 		  left:-130px;
@@ -290,22 +294,11 @@
 		  background: -moz-linear-gradient(top, rgba(245,246,246,1) 0%, rgba(221,223,227,1) 22%, rgba(184,186,198,1) 100%, rgba(219,220,226,1) 100%, rgba(245,246,246,1) 100%); /* FF3.6+ */
 		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(22%,rgba(221,223,227,1)), color-stop(100%,rgba(184,186,198,1)), color-stop(100%,rgba(219,220,226,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
 		  background: -webkit-linear-gradient(top, rgba(245,246,246,1) 0%,rgba(221,223,227,1) 22%,rgba(184,186,198,1) 100%,rgba(219,220,226,1) 100%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
-		}
-		#down {
-		  position:relative;
-		  left:-20px;
-		  top:-5px;
-		}
-		#up {
-		  position:relative;
-		  left:90px;
-		  top:-5px;
-		}
-		  
+		}		  
 	  </style>
   </head>
   <body>  
-    
+    <!--Defines the top menu bar, play buttons, volume slider and icons, justification icons, and search bar-->
 	  <div id="topMenu" class="row">
 	        <a class="file" href="#"><small>File</small></a>
 		    <a class="edit" href="#"><small>Edit</small></a>
@@ -319,14 +312,12 @@
 			  <button id="play" class="btn btn-small" href="#"><i class="icon-play"></i></button>
 			  <button id="fast-forward" class="btn btn-small" href="#"><i class="icon-forward"></i></button>
 			</div>
-
 		    <div id="slider">
 			  <div class="volume">
 			    <i id="down" class="icon-volume-down"></i>
 			    <i id="up" class="icon-volume-up"></i>
 			  </div>
 			</div>
-			
 			<img style="position:relative; top:-72px; left:425px;" src="..\images\TitleBar.jpg" alt="title bar" width="570" class="img-rounded"/>
 		    <div id="justify" class="btn-group">
 		      <a id="b1" class="btn btn-mini"><i class="icon-align-justify"></i></a>
@@ -338,37 +329,34 @@
 		      <form class="navbar-search pull-right">
 		        <input type="text" class="input-medium search-query" placeholder="Search Music">
 		      </form> 
-			</div>
-	       
-		
-	    		
+			</div>		
 	  </div>				
 	  
 	  <div id="music-content-section" class="row">   
 		  <img style="position:relative; right:-180px;" src="..\images\music_section.jpg" alt="music section"/>
 	  </div>
-	  
+	<!--Defines the left task bar and all of its elements-->
       <div id="left-task-bar" class="span2">
         <ul id="left-content" class="nav nav-list">
-	          <li class="nav-header" style="position:relative; left:-10px;">LIBRARY </li>
-		      <li><a href="#" style="position:relative; top:-10px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-music"></i>Music</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-15px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-20px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-26px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-32px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-book"></i>Books</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-38px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-44px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-50px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
-			  <li class="nav-header" style="position:relative; left:-10px; top:-58px;">STORE</li>
-			  <li><a href="#" style="position:relative; top:-64px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
-			  <li><a href="#" style="position:relative; top:-70px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
-			  <li class="nav-header" style="position:relative; left:-10px; top:-77px;">SHARED</li>
-			  <li class="nav-header" style="position:relative; left:-10px; top:-86px;">GENIUS</li>
-			  <li><a href="#" style="position:relative; top:-94px; padding-left:15px;font-size:11px;color:black;"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
-			  <li class="nav-header" style="position:relative; left:-10px; top:-100px;">PLAYLISTS</li>
+	      <li class="nav-header" style="position:relative; left:-10px;">LIBRARY </li>
+		    <li><a href="#" style="position:relative; top:-10px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-music"></i>Music</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-15px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-20px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-26px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-32px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-book"></i>Books</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-38px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-44px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-50px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
+		  <li class="nav-header" style="position:relative; left:-10px; top:-58px;">STORE</li>
+			<li><a href="#" style="position:relative; top:-64px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
+			<li><a href="#" style="position:relative; top:-70px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
+		  <li class="nav-header" style="position:relative; left:-10px; top:-77px;">SHARED</li>
+		  <li class="nav-header" style="position:relative; left:-10px; top:-86px;">GENIUS</li>
+			<li><a href="#" style="position:relative; top:-94px; padding-left:15px;font-size:11px;color:black;"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
+		  <li class="nav-header" style="position:relative; left:-10px; top:-100px;">PLAYLISTS</li>
 	    </ul>
 	  </div>
-	  
+	<!--Defines the bottom task bar and all of its elements-->
 	  <div id="bottom-task-bar" class="row">    
         <div class="bot-buttons">	  
 	    <a href="#" id="plus" class="btn btn-mini" ><i class="icon-plus"></i></a>

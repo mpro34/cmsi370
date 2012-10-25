@@ -1,0 +1,98 @@
+
+%
+% Use the standard article template.
+%
+\documentclass{article}
+
+% The geometry package allows for easy page formatting.
+\usepackage{geometry}
+\geometry{letterpaper}
+
+% Load up special logo commands.
+\usepackage{doc}
+
+% Package for formatting URLs.
+\usepackage{url}
+
+% Packages and definitions for graphics files.
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+%
+% Set the title, author, and date.
+%
+\title{CMSI 370: The Longevity of the Hewlett-Packard 12c Calculator}
+\author{Chris Whiting}
+\date{}
+
+%
+% The document proper.
+%
+\begin{document}
+
+% Add the title section.
+\maketitle
+
+% Add an abstract.
+\abstract{
+The success and popularity of a user interface can be attributed to its correct alignment of the user and developer mental models. The developer mental model is the designer's conceptual model. The user model is the mental model created from the user's interaction with the system. The system image is the physical result of the developer's mental model. The developer expects the user's mental model to be the same as the designer's mental model. When a user interacts with a system, they communicate with the system image.  However, if the system image does not accurately reflect the developer's mental model, then the user will end up with the wrong mental model for the system. The correct balance of the user's mental model, the developers mental model, and the system image is present in the Hewlett-Packard 12c Calculator. 
+}
+
+% Add various lists on new pages.
+\pagebreak
+\tableofcontents
+
+\pagebreak
+\listoffigures
+
+\pagebreak
+\listoftables
+
+% Start the paper on a new page.
+\pagebreak
+
+%
+% Body text.
+%
+\section{Introduction}
+\label{introduction}
+
+The popularity and longevity of the HP 12c calculator can be attributed to the following factors: , specific functions for financial applications, the exchange and last keys help correct user errors, and the ability to write programs. When using the hp12c, the user's mental model changes according to the specific operation being performed. When a calculation involving a specific financial function is being performed, the user's mental model consists of the givens, the unknowns, and the method of solving. Error correction helps the user pick up from their current mental model from the last point that was correct. Writing programs to fit any financial problem, lets the user create their own developer model, which therefore must equal the user's mental model. This is the most important factor of the hp12c, because it allows the user to create their own developer model and system image.
+
+http://h10032.www1.hp.com/ctg/Manual/c00363319.pdf
+
+\section{Basic Financial Functions}
+
+The basic financial functions of the hp 12c helps to simplify, ordinarily complex financial calculations. To accomplish this, the calculator utilizes special financial registers in memory. The memory of the hp12c also helps improve calculation efficiency along with the financial functions. The financial registers are designated by n, i , PV, PMT, and FV as shown in Figure 1. The n financial register denotes the number of days, i represents the annual interest rate, PV denotes the principal amount or present value, PMT is the register standing for the period payment, and the FV register represents the future value during calculations. Solving simple financial calculations is only a matter of keying the correct quantities in the cooresponding financial registers with the register buttons shown in Figure 1.
+
+These registers represent the system image that is based on the developer's model. When the user attempts to solve a financial problem, they create a mental model based on the specific calculation required. The financial functions registers create a clearer system image from the developer's mental model, by allowing the user to systematically enter their calculation. Each step in solving a financial calcualtion will be envisioned by the user and thus the user's mental model is developed. The system image for the operation of the financial functions and registers align with the user's mental model, in terms of steps to reach the answer. That is, the steps the user envisions for any financial calculation can almost directly be keyed on the hp 12c with the financial functions and registers.
+
+\section{Error Preventing/Fixing Keys}
+
+The outline after the introductory and background, preliminary, and related work sections is more dependent on the specific subject of your research.  Remember to cite references where appropriate, organize the material so that it flows well and is clear to the reader.
+
+\subsection{The Exchange Key}
+
+\LaTeX\ has support for up to three outline levels (\verb!\section!, \verb!\subsection!, and \verb!\subsubsection!).  It also recognizes \verb!\paragraph! and \verb!\subparagraph! directives, though those don't show up in the table of contents.  All of these directives expect a title.
+
+Note also the use of the \verb!\verb! directive for inserting code-like labels or symbols.  It was particularly needed here so that we can include the backslash character in the text.
+
+\subsection{The Last Key}
+
+
+\section{Writing Custom Programs}
+
+We're adding another section just so you can see how that looks.  Plus there are a few more \LaTeX\ features to illustrate.
+
+
+
+\section{Conclusion}
+
+Wrap up your paper with an ``executive summary'' of the paper itself, reiterating its subject and its major points.  If you want examples, just look at the conclusions from the literature.
+
+% Generate the bibliography.
+\bibliography{latex-sample}
+\bibliographystyle{unsrt}
+
+\end{document}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  30 OCT 2012 11:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  30 OCT 2012 14:00
 entering extended mode
-**C:/Users/Chris/cmsi370/mental-model-paper/HP12c_Mental_Model.tex
-(C:/Users/Chris/cmsi370/mental-model-paper/HP12c_Mental_Model.tex
+**HP12c_Mental_Model.tex
+(\\CHRIS-PC\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -205,7 +205,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(C:\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.aux)
+(\\CHRIS-PC\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
@@ -273,59 +273,52 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 35.
-
-
-LaTeX Warning: Citation `dui' on page 1 undefined on input line 39.
-
-[1
+ [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.toc)
+(\\CHRIS-PC\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.toc)
 \tf@toc=\write3
- [2]
 
-LaTeX Warning: Citation `hp12c' on page 3 undefined on input line 60.
-
-<Figure_1.jpg, id=14, 527.72156pt x 331.99031pt>
+[2] <Figure_1.jpg, id=14, 527.72156pt x 331.99031pt>
 File: Figure_1.jpg Graphic file (type jpg)
  <use Figure_1.jpg>
 Package pdftex.def Info: Figure_1.jpg used on input line 70.
 (pdftex.def)             Requested size: 216.81pt x 136.39551pt.
- [3]
-<Figure_2.jpg, id=19, 387.69844pt x 23.33719pt>
+
+[3] <Figure_2.jpg, id=19, 387.69844pt x 23.33719pt>
 File: Figure_2.jpg Graphic file (type jpg)
  <use Figure_2.jpg>
 Package pdftex.def Info: Figure_2.jpg used on input line 98.
 (pdftex.def)             Requested size: 216.81pt x 13.05092pt.
- [4 <C:/Users/Chris/cmsi370/mental-model-paper/Figure_1.jpg> <C:/Users/Chris/cm
-si370/mental-model-paper/Figure_2.jpg>]
-(C:\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [5] (C:\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ [4 <//CHRIS-PC/Users/Chris/cmsi370/mental-model-paper/Figure_1.jpg> <//CHRIS-P
+C/Users/Chris/cmsi370/mental-model-paper/Figure_2.jpg>]
+(\\CHRIS-PC\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+)
+[5] (\\CHRIS-PC\Users\Chris\cmsi370\mental-model-paper\HP12c_Mental_Model.aux) 
+) 
 Here is how much of TeX's memory you used:
- 2347 strings out of 494045
- 34183 string characters out of 3145969
- 99575 words of memory out of 3000000
- 5617 multiletter control sequences out of 15000+200000
- 8054 words of font info for 29 fonts, out of 3000000 for 9000
+ 2356 strings out of 494045
+ 34360 string characters out of 3145969
+ 99600 words of memory out of 3000000
+ 5623 multiletter control sequences out of 15000+200000
+ 9012 words of font info for 32 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,6n,23p,968b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on HP12c_Mental_Model.pdf (5 pages, 228621 bytes).
+ 42i,6n,23p,926b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on HP12c_Mental_Model.pdf (5 pages, 251301 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

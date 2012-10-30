@@ -1,3 +1,19 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{dui}
+Ben Shneiderman, Catherine Plaisant, Maxine Cohen, and Steven Jacobs.
+\newblock {\em Designing the User Interface: Strategies for Effective
+  Human-Computer Interaction}.
+\newblock Addison-Wesley Publishing Company, USA, 5th edition, 2009.
+
+\bibitem{hp12c}
+Hewlett-Packard (HP).
+\newblock {\em hp 12c user's guide}, 2007.
+\newblock \url{http://h10032.www1.hp.com/ctg/Manual/c00363319.pdf}.
+
+\bibitem{hp}
+Hewlett-Packard (HP).
+\newblock {\em RPN, An introducrtion to Reverse Polish Notation}, 1972.
+\newblock \url{http://h41111.www4.hp.com/calculators/uk/en/articles/rpn.html}.
 
 \end{thebibliography}

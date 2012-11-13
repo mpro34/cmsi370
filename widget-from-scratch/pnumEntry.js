@@ -11,7 +11,7 @@ var display = function () {
 		numarray[count] = "-";
 	}
 	/*Erase current phone number and start new one*/
-	if (count==11) {
+	if (count==10) {
 		count=0;
 		numarray=numarray.toString();
 		numarray=numarray.replace(/,/g,"");

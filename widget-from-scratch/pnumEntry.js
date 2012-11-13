@@ -1,20 +1,28 @@
 var numarray = new Array();
-var count = 1;
+var count = 0;
 var display = function () {
-	numarray[0]="(";
+	/*numarray[0]="(";*/
 	count++;
-	if (count==4) {
+	/*if (count==4) {
 		numarray[count] = ")";
-	}
-	if (count==7) {
+	}*/
+	/*Add hyphen between numbers automatically*/
+	if (count==6) {
 		numarray[count] = "-";
 	}
+	/*Erase current phone number and start new one*/
 	if (count==11) {
 		count=0;
-		numarray = 0;
+		numarray=numarray.toString();
+		numarray=numarray.replace(/,/g,"");
+		/*numarray.splice(0,11);*/
 	}
 
     document.getElementById("result").innerHTML = numarray;
+};
+
+document.getElementById("erase").onclick = function () {
+    numarray.splice(0,11);
 };
 
 document.getElementById("1").onclick = function () {

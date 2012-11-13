@@ -13,16 +13,17 @@ var display = function () {
 	/*Erase current phone number and start new one*/
 	if (count==10) {
 		count=0;
-		numarray=numarray.toString();
-		numarray=numarray.replace(/,/g,"");
+		numstring=numarray.toString();
+		numarray=numstring.replace(/,/g,"");
 		/*numarray.splice(0,11);*/
 	}
 
     document.getElementById("result").innerHTML = numarray;
 };
 
-document.getElementById("erase").onclick = function () {
-    numarray.splice(0,11);
+document.getElementById("newNum").onclick = function () {
+    numarray=numstring.split(" ");
+    numarray.splice(0,10);
 };
 
 document.getElementById("1").onclick = function () {

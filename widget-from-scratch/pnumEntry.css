@@ -22,18 +22,24 @@
   position: relative;
   top: 0px;
 }
+#result {
+  width:150px;
+  padding:10px;
+  border:5px solid gray;
+  margin:0px;
+}
 
-
-#row1 {
+#Row1 {
+  position: absolute;
+  left:50px;
+}
+#Row2 {
   position: relative;
 }
-#row2 {
+#Row3 {
   position: relative;
 }
-#row3 {
-  position: relative;
-}
-#row4 {
+#Row4 {
   position: relative;
   right:-3px;
 }

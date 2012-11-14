@@ -7,11 +7,14 @@ var display = function () {
 		numarray[count] = ")";
 	}*/
 	/*Add hyphen between numbers automatically*/
-	if (count==6) {
+    if (count==3) {
+        numarray[count] = "-";
+    }
+	if (count==7) {
 		numarray[count] = "-";
 	}
 	/*Erase current phone number and start new one*/
-	if (count==10) {
+	if (count==11) {
 		count=0;
 		numstring=numarray.toString();
 		numarray=numstring.replace(/,/g,"");
@@ -23,7 +26,7 @@ var display = function () {
 
 document.getElementById("newNum").onclick = function () {
     numarray=numstring.split(" ");
-    numarray.splice(0,10);
+    numarray.splice(0,11);
 };
 
 document.getElementById("1").onclick = function () {

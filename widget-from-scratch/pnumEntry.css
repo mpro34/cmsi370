@@ -30,18 +30,24 @@
 }
 
 #Row1 {
-  position: absolute;
+  position: relative;
   left:50px;
 }
 #Row2 {
   position: relative;
+  left:50px;
 }
 #Row3 {
   position: relative;
+  left:50px;
 }
 #Row4 {
   position: relative;
-  right:-3px;
+  left:50px;
+}
+#newNum {
+  position:relative;
+  left:50px;
 }
 /* black settings */
 .black {

@@ -59,9 +59,12 @@ var startSierpinski = function (canvas) {
         yDragStart,
         xRotationStart,
         yRotationStart,
-
+     /*   xPanStart,
+        yPanStart,   */
+  
         // Utility function for rotating the camera.
         cameraRotate;
+
 
     // Grab the WebGL rendering context.
     gl = canvas.getContext("experimental-webgl");
@@ -287,7 +290,7 @@ var startSierpinski = function (canvas) {
     drawScene = function () {
         // Clear the display.
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-
+//action!!! variables viewerLocation, roation, scale
         // Set up the viewing volume.
         projectionMatrix.loadIdentity();
         projectionMatrix.perspective(45, canvas.width / canvas.height, 11.0, 100.0);
@@ -324,13 +327,24 @@ var startSierpinski = function (canvas) {
         rotationAroundY = yRotationStart + xDragStart - event.clientX;
         drawScene();
     };
+    //The following function scales the triangle at the event of the mouse and ctrl key.
+    triangleScale = function (event) {
+        scaleFactor = event.clientY/500;
+        drawScene();
+    };
+
+    //We want to drag-to-pan where the 5 slows down the movement of the triangle.
+    cameraPan = function (event) {
+        viewerLocation.x = xDragStart - event.clientX;
+        viewerLocation.y = yDragStart - event.clientY;
+        drawScene();
+    };
 
     canvas.onmousedown = function (event) {
         xDragStart = event.clientX;
         yDragStart = event.clientY;
         xRotationStart = rotationAroundX;
         yRotationStart = rotationAroundY;
-        canvas.onmousemove = cameraRotate;
     };
 
     canvas.onmouseup = function () {

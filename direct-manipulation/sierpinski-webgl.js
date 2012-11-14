@@ -336,7 +336,7 @@ var startSierpinski = function (canvas) {
     //We want to drag-to-pan where the 5 slows down the movement of the triangle.
     cameraPan = function (event) {
         viewerLocation.x = xDragStart - event.clientX;
-        viewerLocation.y = yDragStart - event.clientY;
+        viewerLocation.y = -(yDragStart - event.clientY);
         drawScene();
     };
 
@@ -345,6 +345,18 @@ var startSierpinski = function (canvas) {
         yDragStart = event.clientY;
         xRotationStart = rotationAroundX;
         yRotationStart = rotationAroundY;
+        //If the control key is pressed with the mouse, pan camera.
+        if (event.ctrlKey==1) {
+            canvas.onmousemove = cameraPan;
+        }
+        //If the shift key is pressed with the mouse, scale the triangle.
+        else if (event.shiftKey==1) {
+            canvas.onmousemove = triangleScale;
+        }
+        //Else just rotate the triangle.
+        else {
+            canvas.onmousemove = cameraRotate;
+        }
     };
 
     canvas.onmouseup = function () {

@@ -335,8 +335,8 @@ var startSierpinski = function (canvas) {
 
     //We want to drag-to-pan where the 5 slows down the movement of the triangle.
     cameraPan = function (event) {
-        viewerLocation.x = xDragStart - event.clientX;
-        viewerLocation.y = -(yDragStart - event.clientY);
+        viewerLocation.x = (xDragStart - event.clientX)/5;
+        viewerLocation.y = -(yDragStart - event.clientY)/5;
         drawScene();
     };
 

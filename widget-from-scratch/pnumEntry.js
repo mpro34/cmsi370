@@ -1,11 +1,8 @@
 var numarray = new Array();
 var count = 0;
 var display = function () {
-	/*numarray[0]="(";*/
 	count++;
-	/*if (count==4) {
-		numarray[count] = ")";
-	}*/
+    console.log(count);
 	/*Add hyphen between numbers automatically*/
     if (count==3) {
         numarray[count] = "-";
@@ -27,54 +24,55 @@ var display = function () {
 document.getElementById("newNum").onclick = function () {
     numarray=numstring.split(" ");
     numarray.splice(0,11);
+    display()
 };
 
-document.getElementById("1").onclick = function () {
+document.getElementById("b1").onclick = function () {
     numarray.push("1");
     display();
 };
 
-document.getElementById("2").onclick = function () {
+document.getElementById("b2").onclick = function () {
     numarray.push("2");
     display();
 };
 
-document.getElementById("3").onclick = function () {
+document.getElementById("b3").onclick = function () {
     numarray.push("3");
     display();
 };
 
-document.getElementById("4").onclick = function () {
+document.getElementById("b4").onclick = function () {
     numarray.push("4");
     display();
 };
 
-document.getElementById("5").onclick = function () {
+document.getElementById("b5").onclick = function () {
     numarray.push("5");
     display();
 };
 
-document.getElementById("6").onclick = function () {
+document.getElementById("b6").onclick = function () {
     numarray.push("6");
     display();
 };
 
-document.getElementById("7").onclick = function () {
+document.getElementById("b7").onclick = function () {
     numarray.push("7");
     display();
 };
 
-document.getElementById("8").onclick = function () {
+document.getElementById("b8").onclick = function () {
     numarray.push("8");
     display();
 };
 
-document.getElementById("9").onclick = function () {
+document.getElementById("b9").onclick = function () {
     numarray.push("9");
     display();
 };
 
-document.getElementById("0").onclick = function () {
+document.getElementById("b0").onclick = function () {
     numarray.push("0");
     display();
 };

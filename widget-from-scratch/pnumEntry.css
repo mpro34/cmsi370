@@ -1,4 +1,7 @@
 
+#phone-body {
+  width: 200px;
+}
 .button {
   display: inline-block;
   outline: none;

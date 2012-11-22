@@ -19,7 +19,6 @@ var display = function () {
             
     document.getElementById("result").innerHTML = numstring;
 };
-//Fix this function
 document.getElementById("newNum").onclick = function () {
     count=-1;
     numstring=numstring.substring(1,1);
@@ -30,6 +29,19 @@ document.getElementById("b1").onclick = function () {
     numstring=numstring.concat("1");
     display();
 };
+//When the page is loaded, it registers which key the user presses
+document.getElementById("phone-body").onload = function (event) {
+    keyIdentify(event);
+};
+
+function keyIdentify(event) {
+    var code;
+    if (!e) var e = window.event;
+    if (e.keyCode) code = e.keyCode;
+    else if (e.which) code = e.which;
+    var character = String.fromCharCode(code);
+    alert('Character was ' + character);
+}
 
 document.getElementById("b2").onclick = function () {
     numstring=numstring.concat("2");

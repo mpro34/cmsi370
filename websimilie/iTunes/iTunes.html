@@ -1,6 +1,4 @@
 <!doctype html>
-<!-- separate css and javascript into its own files, delete style tags from html and add to css!-->
-<!--Model(html) -> View(Css) -> Controller(js) relationship separation-->
 <html>
    
 		<head>
@@ -24,7 +22,7 @@
 		   <a class="advanced" href="#"><small>Advanced</small></a>
 		   <a class="help" href="#"><small>Help</small></a>
 			<div class="playButtons">
-		 		<button id="rewind" class="btn btn-small" href="#"><i class="icon-backward" style="position:relative; left:-3px;"></i></button> 
+		 		<button id="rewind" class="btn btn-small" href="#"><i class="icon-backward"></i></button> 
 			  <button id="play" class="btn btn-small" href="#"><i class="icon-play"></i></button>
 			  <button id="fast-forward" class="btn btn-small" href="#"><i class="icon-forward"></i></button>
 			</div>
@@ -34,7 +32,7 @@
 			   	<i id="up" class="icon-volume-up"></i>
 			  </div>
 			</div>
-			<img style="position:relative; top:-72px; left:425px;" src="..\images\TitleBar.jpg" alt="title bar" width="570" class="img-rounded"/>
+			<img src="..\images\TitleBar.jpg" alt="title bar" width="570" class="img-rounded"/>
 		 		<div id="justify" class="btn-group">
 		   		<a id="b1" class="btn btn-mini"><i class="icon-align-justify"></i></a>
 		     <a id="b2" class="btn btn-mini"><i class="icon-list"></i></a>
@@ -49,27 +47,27 @@
 	  </div>				
 	  
 	  <div id="music-content-section" class="row">   
-		 		<img style="position:relative; right:-180px;" src="..\images\music_section.jpg" alt="music section"/>
+		 		<img src="..\images\music_section.jpg" alt="music" class="music_section"/>
 	  </div>
 	<!--Defines the left task bar and all of its elements-->
    <div id="left-task-bar" class="span2">
    		<ul id="left-content" class="nav nav-list">
-	    		<li class="nav-header" style="position:relative; left:-10px;">LIBRARY </li>
-		   		<li><a href="#" style="position:relative; top:-10px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-music"></i>Music</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-15px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-20px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-26px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-32px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-book"></i>Books</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-38px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-44px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-50px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
-						 <li class="nav-header" style="position:relative; left:-10px; top:-58px;">STORE</li>
-							<li><a href="#" style="position:relative; top:-64px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
-							<li><a href="#" style="position:relative; top:-70px; padding-left:15px;font-size:11px;color:black;"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
-						 <li class="nav-header" style="position:relative; left:-10px; top:-77px;">SHARED</li>
-						 <li class="nav-header" style="position:relative; left:-10px; top:-86px;">GENIUS</li>
-							<li><a href="#" style="position:relative; top:-94px; padding-left:15px;font-size:11px;color:black;"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
-						 <li class="nav-header" style="position:relative; left:-10px; top:-100px;">PLAYLISTS</li>
+	    		<li class="nav-header" id="library">LIBRARY </li>
+		   		<li><a href="#" id="icon-music"> <strong><i class="icon-music"></i>Music</strong> </a></li>
+							<li><a href="#" id="icon-film"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
+							<li><a href="#" id="icon-facetime-video"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
+							<li><a href="#" id="icon-user"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
+							<li><a href="#" id="icon-book"> <strong><i class="icon-book"></i>Books</strong> </a></li>
+							<li><a href="#" id="icon-hdd"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
+							<li><a href="#" id="icon-bell"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
+							<li><a href="#" id="icon-map-marker"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
+						 <li class="nav-header" id="store">STORE</li>
+							<li><a href="#" id="icon-gift"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
+							<li><a href="#" id="icon-shopping-cart"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
+						 <li class="nav-header" id="shared">SHARED</li>
+						 <li class="nav-header" id="genius-title">GENIUS</li>
+							<li><a href="#" id="icon-globe"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
+						 <li class="nav-header" id="playlists">PLAYLISTS</li>
 	    </ul>
 	  </div>
 	<!--Defines the bottom task bar and all of its elements-->

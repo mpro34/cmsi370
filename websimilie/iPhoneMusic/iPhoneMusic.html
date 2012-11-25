@@ -1,66 +1,69 @@
 <!doctype html>
 <html> 
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> iPhone Music Player Websimilie! </title>
-	  <link rel="stylesheet"
-        href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.css"/>  <!--Implements bootstrap.css-->
-	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" /> <!--Implements JsQuery-->
-	  <link rel="stylesheet" href="/resources/demos/style.css" />
-      <link rel="stylesheet" href="iPhoneMusic.css"/>
-  </head>
-  <body>
-  <!--Defines the container for the facsimilie and the background image-->
-    <div id="iPhoneBackground" class="container">
-	  <div id="iPhoneStatus" class="row">
-	    <i class="icon-signal icon-white pull-left"></i>
-	    <div id="logo" class="span1">AT&T 4G</div>
-	    <div id="time" class="span1">7:06PM</div>
-	    <div id="bat-percent" class="span1">48%</div>
-	    <img src="../images/battery.jpg" alt="battery" class="bat" height="24" width="24"/>	
-	  </div>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> iPhone Music Player Websimilie! </title>
+        <link rel="stylesheet"
+            href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.css"/>  <!--Implements bootstrap.css-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" /> <!--Implements JsQuery-->
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <link rel="stylesheet" href="iPhoneMusic.css"/>
+    </head>
+    <body>
+    <!--Defines the container for the facsimilie and the background image-->
+        <div id="iPhoneBackground" class="container">
+            <div id="iPhoneStatus" class="row">
+                <i class="icon-signal icon-white pull-left"></i>
+            <div id="logo" class="span1">AT&T 4G</div>
+            <div id="time" class="span1">7:06PM</div>
+            <div id="bat-percent" class="span1">48%</div>
+            <img src="../images/battery.jpg" alt="battery" class="bat" height="24" width="24"/>	
+            </div>
     <!-- Top Menu -->
-	  <div id="topMenu" class="row"> 
-	    <p class="artist">Above & Beyond</p>
-	    <p class="song">Thing Called Love</p>
-	    <p class="album">Group Therapy</p>
-	    <button id="back-btn" class="btn btn-inverse">
-	      <i class="icon-arrow-left icon-white"></i>
-	    </button>
-	    <button id="album-btn" class="btn btn-inverse pull-right">
-	      <i class="icon-list icon-white"></i>
-	    </button>
-	  </div>
+            <div id="topMenu" class="row"> 
+                <p class="artist">Above & Beyond</p>
+                <p class="song">Thing Called Love</p>
+                <p class="album">Group Therapy</p>
+                <button id="back-btn" class="btn btn-inverse">
+                    <i class="icon-arrow-left icon-white"></i>
+                </button>
+                <button id="album-btn" class="btn btn-inverse pull-right">
+                    <i class="icon-list icon-white"></i>
+                </button>
+            </div>
     <!-- Music Control Menu -->  
-	  <div id="music-controlMenu" class="row">
-	    <div id="slider1"></div>
-        <a class="retweet">
-		  <i class="icon-retweet icon-white"></i>
-	    </a>
-	    <a class="random">
-	      <i class="icon-random icon-white"></i>
-	    </a>
-	    <p class="start">0:00</p>
-	    <p class="stop">-5:29</p>
-	    <p class="songNum">1 of 1</p>
-	  </div>
+            <div id="music-controlMenu" class="row">
+                <div id="slider1"></div>
+                <a class="retweet">
+                    <i class="icon-retweet icon-white"></i>
+                </a>
+                <a class="random">
+                    <i class="icon-random icon-white"></i>
+                </a>
+                <p class="start">0:00</p>
+                <p class="stop">-5:29</p>
+                <p class="songNum">1 of 1</p>
+            </div>
     <!-- Play Buttons -->  
-      <div id="play-btns" class="btn-group">
-        <button class="btn btn-inverse btn-large">
-        <i class="icon-backward icon-white"></i></button>
-	    <button class="btn btn-inverse btn-large">
-	    <i class="icon-play icon-white"></i></button>
-	    <button class="btn btn-inverse btn-large">
-	    <i class="icon-forward icon-white"></i></button>
-	  </div>
+            <div id="play-btns" class="btn-group">
+                <button class="btn btn-inverse btn-large">
+                    <i class="icon-backward icon-white"></i>
+                </button>
+                <button class="btn btn-inverse btn-large">
+                    <i class="icon-play icon-white"></i>
+                </button>
+                <button class="btn btn-inverse btn-large">
+                    <i class="icon-forward icon-white"></i>
+                </button>
+            </div>
     <!-- Bottom Menu -->  
-	  <div id="bottom-Menu" class="row">
-	    <div id="slider2"></div>
-	  </div>
-    </div>
-  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-  <script src="iPhoneMusic.js"></script>
-  </body>
+            <div id="bottom-Menu" class="row">
+                <div id="slider2"></div>
+            </div>
+        </div>
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="iPhoneMusic.js"></script>
+    </body>
 </html>

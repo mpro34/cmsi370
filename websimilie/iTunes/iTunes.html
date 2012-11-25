@@ -1,88 +1,87 @@
 <!doctype html>
 <html>
-   
-		<head>
-  		<meta charset="utf-8"/>
-   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   	<title> iTunes Websimilie! </title>
-	  	<link rel="stylesheet"
-      href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.min.css"/>
-	   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
-		  <link rel="stylesheet" href="/resources/demos/style.css" />
-    <link rel="stylesheet" href="iTunes.css"/>
-  </head>
-  <body>  
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> iTunes Websimilie! </title>
+        <link rel="stylesheet"
+            href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <link rel="stylesheet" href="iTunes.css"/>
+    </head>
+    <body>  
    <!--Defines the top menu bar, play buttons, volume slider and icons, justification icons, and search bar-->
-	  <div id="topMenu" class="row">
-	  		<a class="file" href="#"><small>File</small></a>
-		   <a class="edit" href="#"><small>Edit</small></a>
-		   <a class="view" href="#"><small>View</small></a>
-		   <a class="controls" href="#"><small>Controls</small></a>
-		   <a class="store" href="#"><small>Store</small></a>
-		   <a class="advanced" href="#"><small>Advanced</small></a>
-		   <a class="help" href="#"><small>Help</small></a>
-			<div class="playButtons">
-		 		<button id="rewind" class="btn btn-small" href="#"><i class="icon-backward"></i></button> 
-			  <button id="play" class="btn btn-small" href="#"><i class="icon-play"></i></button>
-			  <button id="fast-forward" class="btn btn-small" href="#"><i class="icon-forward"></i></button>
-			</div>
-		   <div id="slider">
-			 	<div class="volume">
-			  	 <i id="down" class="icon-volume-down"></i>
-			   	<i id="up" class="icon-volume-up"></i>
-			  </div>
-			</div>
-			<img src="..\images\TitleBar.jpg" alt="title bar" width="570" class="img-rounded"/>
-		 		<div id="justify" class="btn-group">
-		   		<a id="b1" class="btn btn-mini"><i class="icon-align-justify"></i></a>
-		     <a id="b2" class="btn btn-mini"><i class="icon-list"></i></a>
-		     <a id="b3" class="btn btn-mini"><i class="icon-th"></i></a>
-		     <a id="b4" class="btn btn-mini"><i class="icon-th-large"></i></a>
-		   </div>
-					<div id="searchBar">
-		   		<form class="navbar-search pull-right">
-		     		<input type="text" class="input-medium search-query" placeholder="Search Music">
-		     </form> 
-					</div>		
-	  </div>				
+        <div id="topMenu" class="row">
+            <a class="file" href="#"><small>File</small></a>
+            <a class="edit" href="#"><small>Edit</small></a>
+            <a class="view" href="#"><small>View</small></a>
+            <a class="controls" href="#"><small>Controls</small></a>
+            <a class="store" href="#"><small>Store</small></a>
+            <a class="advanced" href="#"><small>Advanced</small></a>
+            <a class="help" href="#"><small>Help</small></a>
+            <div class="playButtons">
+                <button id="rewind" class="btn btn-small" href="#"><i class="icon-backward"></i></button> 
+                <button id="play" class="btn btn-small" href="#"><i class="icon-play"></i></button>
+                <button id="fast-forward" class="btn btn-small" href="#"><i class="icon-forward"></i></button>
+            </div>
+            <div id="slider">
+                <div class="volume">
+                    <i id="down" class="icon-volume-down"></i>
+                    <i id="up" class="icon-volume-up"></i>
+                </div>
+            </div>
+                <img src="..\images\TitleBar.jpg" alt="title bar" width="570" class="img-rounded"/>
+                <div id="justify" class="btn-group">
+                    <a id="b1" class="btn btn-mini"><i class="icon-align-justify"></i></a>
+                    <a id="b2" class="btn btn-mini"><i class="icon-list"></i></a>
+                    <a id="b3" class="btn btn-mini"><i class="icon-th"></i></a>
+                    <a id="b4" class="btn btn-mini"><i class="icon-th-large"></i></a>
+		        </div>
+			    <div id="searchBar">
+		   		    <form class="navbar-search pull-right">
+		     		    <input type="text" class="input-medium search-query" placeholder="Search Music">
+		            </form> 
+                </div>		
+        </div>				
 	  
-	  <div id="music-content-section" class="row">   
-		 		<img src="..\images\music_section.jpg" alt="music" class="music_section"/>
-	  </div>
+        <div id="music-content-section" class="row">   
+            <img src="..\images\music_section.jpg" alt="music" class="music_section"/>
+        </div>
 	<!--Defines the left task bar and all of its elements-->
-   <div id="left-task-bar" class="span2">
-   		<ul id="left-content" class="nav nav-list">
-	    		<li class="nav-header" id="library">LIBRARY </li>
-		   		<li><a href="#" id="icon-music"> <strong><i class="icon-music"></i>Music</strong> </a></li>
-							<li><a href="#" id="icon-film"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
-							<li><a href="#" id="icon-facetime-video"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
-							<li><a href="#" id="icon-user"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
-							<li><a href="#" id="icon-book"> <strong><i class="icon-book"></i>Books</strong> </a></li>
-							<li><a href="#" id="icon-hdd"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
-							<li><a href="#" id="icon-bell"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
-							<li><a href="#" id="icon-map-marker"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
-						 <li class="nav-header" id="store">STORE</li>
-							<li><a href="#" id="icon-gift"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
-							<li><a href="#" id="icon-shopping-cart"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
-						 <li class="nav-header" id="shared">SHARED</li>
-						 <li class="nav-header" id="genius-title">GENIUS</li>
-							<li><a href="#" id="icon-globe"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
-						 <li class="nav-header" id="playlists">PLAYLISTS</li>
-	    </ul>
-	  </div>
+        <div id="left-task-bar" class="span2">
+            <ul id="left-content" class="nav nav-list">
+                <li class="nav-header" id="library">LIBRARY </li>
+                <li><a href="#" id="icon-music"> <strong><i class="icon-music"></i>Music</strong> </a></li>
+                <li><a href="#" id="icon-film"> <strong><i class="icon-film"></i>Movies</strong> </a></li>
+                <li><a href="#" id="icon-facetime-video"> <strong><i class="icon-facetime-video"></i>TV Shows</strong> </a></li>
+                <li><a href="#" id="icon-user"> <strong><i class="icon-user"></i>Podcasts</strong> </a></li>
+                <li><a href="#" id="icon-book"> <strong><i class="icon-book"></i>Books</strong> </a></li>
+                <li><a href="#" id="icon-hdd"> <strong><i class="icon-hdd"></i>Apps</strong> </a></li>
+                <li><a href="#" id="icon-bell"> <strong><i class="icon-bell"></i>Tones</strong> </a></li>
+                <li><a href="#" id="icon-map-marker"> <strong><i class="icon-map-marker"></i>Radio</strong> </a></li>
+                <li class="nav-header" id="store">STORE</li>
+                <li><a href="#" id="icon-gift"> <strong><i class="icon-gift"></i>iTunes Store</strong> </a></li>
+                <li><a href="#" id="icon-shopping-cart"> <strong><i class="icon-shopping-cart"></i>Purchased</strong> </a></li>
+                <li class="nav-header" id="shared">SHARED</li>
+                <li class="nav-header" id="genius-title">GENIUS</li>
+                <li><a href="#" id="icon-globe"><strong><i class="icon-globe"></i>Genius</strong> </a></li>
+                <li class="nav-header" id="playlists">PLAYLISTS</li>
+            </ul>
+        </div>
 	<!--Defines the bottom task bar and all of its elements-->
-	  <div id="bottom-task-bar" class="row">    
-     <div class="bot-buttons">	  
-	    		<a href="#" id="plus" class="btn btn-mini" ><i class="icon-plus"></i></a>
-							<a href="#" id="random" class="btn btn-mini" ><i class="icon-random"></i></a>
-							<a href="#" id="retweet" class="btn btn-mini" ><i class="icon-retweet"></i></a>
-							<a href="#" id="chev-up" class="btn btn-mini" ><i class="icon-chevron-up"></i></a>
-							<a href="#" id="genius" class="btn btn-mini" ><i class="icon-globe"></i></a>
-							<a href="#" id="chev-left" class="btn btn-mini" ><i class=" icon-chevron-left"></i></a>
-	    </div> 
-	  </div>
-   		<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-	  		<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-	  		<script src="iTunes.js"></script>
- 	</body>
+        <div id="bottom-task-bar" class="row">    
+            <div class="bot-buttons">	  
+                <a href="#" id="plus" class="btn btn-mini" ><i class="icon-plus"></i></a>
+                <a href="#" id="random" class="btn btn-mini" ><i class="icon-random"></i></a>
+                <a href="#" id="retweet" class="btn btn-mini" ><i class="icon-retweet"></i></a>
+                <a href="#" id="chev-up" class="btn btn-mini" ><i class="icon-chevron-up"></i></a>
+                <a href="#" id="genius" class="btn btn-mini" ><i class="icon-globe"></i></a>
+                <a href="#" id="chev-left" class="btn btn-mini" ><i class=" icon-chevron-left"></i></a>
+            </div> 
+        </div>
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="iTunes.js"></script>
+    </body>
 </html>

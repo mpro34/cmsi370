@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  22 NOV 2012 21:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  25 NOV 2012 23:04
 entering extended mode
 **C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
 (C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
@@ -126,16 +126,16 @@ Package pdftex.def Info: studentavatar.jpg used on input line 34.
 Here is how much of TeX's memory you used:
  1157 strings out of 494045
  15735 string characters out of 3145969
- 70125 words of memory out of 3000000
+ 69125 words of memory out of 3000000
  4486 multiletter control sequences out of 15000+200000
  7580 words of font info for 27 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,19p,1318b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,19p,1024b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on headmaster_dream_design.pdf (4 pages, 191310 bytes).
+Output written on headmaster_dream_design.pdf (4 pages, 193200 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

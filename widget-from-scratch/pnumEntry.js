@@ -20,12 +20,20 @@ var display = function () {
     document.getElementById("result").innerHTML = numstring;
 };
 
-//When the page is loaded, it registers which key the user presses
+//When a key is pressed it goes through the key identifier loop.
 document.onkeydown = function (event) {
-    keyIdentify(event);
+	if (event.shiftKey==1) {
+        document.onkeydown = function (event) {
+            keyIdentify(event);
+        }
+	}
+    else {
+        keyIdentify(event);
+    }
 };
 
 function keyIdentify(event) {
+	
     var code;
     if (!event) var event = window.event;
     //Accomidate for all browsers' key recognition
@@ -64,16 +72,21 @@ function keyIdentify(event) {
         case 57:
             B9()
             break;
+        //A star can be inputted by the star on a number pad or the - key.
         case 106:
             Star();
+            break;
+        case 189:
+            Star();
+            break;
+        //A pound sign can be inputted by the + key.
+        case 187:
+            Pound();
             break;
         case 8:
             newNum();
             break;
     }
-
- //   var character = String.fromCharCode(code);
- //   alert('Character was ' + character);
 }
 
 document.getElementById("b0").onclick = function () {

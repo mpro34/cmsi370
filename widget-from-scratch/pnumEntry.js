@@ -1,21 +1,21 @@
 var numstring = "";
 var count = 0;
 var display = function () {
-	count++;
+    count++;
   //  console.log(count);
 	/*Add hyphen between numbers automatically*/
     if (count==3) {
         numstring=numstring.concat("-");
     }
-	if (count==6) {
-		numstring=numstring.concat("-");
-	}
-	/*Erase current phone number and start new one*/
+    if (count==6) {
+	    numstring=numstring.concat("-");
+    }
+    /*Erase current phone number and start new one*/
     //Limit the amount of user entered numbers here, max is 10 numbers with 2 dashes.
-	if (count>=11) {
+    if (count>=11) {
         numstring=numstring;
 		/*numstring.splice(0,11);*/
-	}
+    }
             
     document.getElementById("result").innerHTML = numstring;
 };

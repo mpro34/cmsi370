@@ -1,7 +1,9 @@
 var numstring = "";
 var count = 0;
+var backspace = 1;
 var display = function () {
     count++;
+    backspace++;
   //  console.log(count);
 	/*Add hyphen between numbers automatically*/
     if (count==3) {
@@ -9,27 +11,29 @@ var display = function () {
     }
     if (count==6) {
 	    numstring=numstring.concat("-");
-    }
-    /*Erase current phone number and start new one*/
-    //Limit the amount of user entered numbers here, max is 10 numbers with 2 dashes.
-    if (count>=11) {
-        numstring=numstring;
-		/*numstring.splice(0,11);*/
-    }
-            
+    }          
     document.getElementById("result").innerHTML = numstring;
 };
 
 //When a key is pressed it goes through the key identifier loop.
 document.onkeydown = function (event) {
-	if (event.shiftKey==1) {
+/*	if (event.shiftKey==1) {
         document.onkeydown = function (event) {
             keyIdentify(event);
         }
 	}
-    else {
-        keyIdentify(event);
+    else {*/
+       // alert(count);
+    /*Erase current phone number and start new one*/
+    //Limit the amount of user entered numbers here, max is 10 numbers with 2 dashes.
+  /*  if (count>=10) {
+        numstring=numstring.concat("");
+        display();
     }
+    else {*/
+        keyIdentify(event);
+    
+ //   }
 };
 
 function keyIdentify(event) {
@@ -181,7 +185,8 @@ function Pound() {
 }
 
 function newNum() {
-    count=-1;
-    numstring=numstring.substring(1,1);
+    count--;
+    numstring=numstring.substring(backspace,0);
+    backspace=backspace-2;
     display()
 }

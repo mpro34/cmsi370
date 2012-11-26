@@ -19,11 +19,6 @@ var display = function () {
             
     document.getElementById("result").innerHTML = numstring;
 };
-document.getElementById("newNum").onclick = function newNum () {
-    count=-1;
-    numstring=numstring.substring(1,1);
-    display()
-};
 
 //When the page is loaded, it registers which key the user presses
 document.onkeydown = function (event) {
@@ -37,18 +32,48 @@ function keyIdentify(event) {
     if (event.keyCode) code = event.keyCode;
     else if (event.which) code = event.which;
     else if (event.charCode) code = event.charCode;
-alert(code);
+    //Checks to see which key was pressed and runs the appropriate function.
     switch(code) {
         case 48:
             B0();
             break;
         case 49:
-        	B1();
-        	break;
+            B1();
+            break;
+        case 50:
+            B2();
+            break;
+        case 51:
+            B3();
+            break;
+        case 52:
+            B4();
+            break;
+        case 53:
+            B5();
+            break;
+        case 54:
+            B6();
+            break;
+        case 55:
+            B7();
+            break;
+        case 56:
+            B8()
+            break;
+        case 57:
+            B9()
+            break;
+        case 106:
+            Star();
+            break;
+        case 8:
+            newNum();
+            break;
     }
 
-    var character = String.fromCharCode(code);
-    alert('Character was ' + character);
+ //   var character = String.fromCharCode(code);
+ //   alert('Character was ' + character);
 }
 
 document.getElementById("b0").onclick = function () {
@@ -86,6 +111,10 @@ document.getElementById("star").onclick = function () {
 };
 document.getElementById("pound").onclick = function () {
     Pound();
+};
+
+document.getElementById("newNum").onclick = function () {
+	newNum();
 };
 
 function B0() {
@@ -136,4 +165,10 @@ function Star() {
 function Pound() {
 	numstring=numstring.concat("#");
     display();
+}
+
+function newNum() {
+    count=-1;
+    numstring=numstring.substring(1,1);
+    display()
 }

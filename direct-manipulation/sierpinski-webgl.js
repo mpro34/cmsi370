@@ -327,15 +327,20 @@ var startSierpinski = function (canvas) {
         rotationAroundY = yRotationStart + xDragStart - event.clientX;
         drawScene();
     };
+
     //The following function scales the triangle at the event of the mouse and ctrl key.
+    // JD: Note, the variable below is in global scope!
     triangleScale = function (event) {
         scaleFactor = event.clientY/500;
         drawScene();
     };
 
     //We want to drag-to-pan where the 5 slows down the movement of the triangle.
+    // JD: Yet another globally-scoped variable!
     cameraPan = function (event) {
-        viewerLocation.x = (xDragStart - event.clientX)/5;
+        // JD: I would space your expressions out more, like the line
+        //     immediately below this comment.
+        viewerLocation.x = (xDragStart - event.clientX) / 5;
         viewerLocation.y = -(yDragStart - event.clientY)/5;
         drawScene();
     };
@@ -346,6 +351,9 @@ var startSierpinski = function (canvas) {
         xRotationStart = rotationAroundX;
         yRotationStart = rotationAroundY;
         //If the control key is pressed with the mouse, pan camera.
+
+        // JD: Remember, === is preferable in JavaScript!  Also, you should
+        //     space out your comparators (i.e., (event.ctrlKey === 1)).
         if (event.ctrlKey==1) {
             canvas.onmousemove = cameraPan;
         }
@@ -357,6 +365,13 @@ var startSierpinski = function (canvas) {
         else {
             canvas.onmousemove = cameraRotate;
         }
+
+        // JD: For the above code, remember that it is not enough just to
+        //     set the mousemove handler.  There is initial state for each
+        //     action that you should record.  As it is, your implementation
+        //     displays "jerky" behavior in certain cases, because it does
+        //     not keep track of things like what the scale factor is at the
+        //     the time the mouse gets held down, etc.
     };
 
     canvas.onmouseup = function () {

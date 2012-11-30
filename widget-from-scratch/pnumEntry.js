@@ -1,5 +1,6 @@
 var numstring = "";
 var count = 0;
+//Fix count
 var backspace = 1;
 var display = function () {
     count++;
@@ -8,9 +9,11 @@ var display = function () {
 	/*Add hyphen between numbers automatically*/
     if (count==3) {
         numstring=numstring.concat("-");
+        //count--;
     }
     if (count==6) {
 	    numstring=numstring.concat("-");
+        //count--;
     }          
     document.getElementById("result").innerHTML = numstring;
 };
@@ -185,8 +188,13 @@ function Pound() {
 }
 
 function newNum() {
-    count--;
+    if (count==3 || count==6) {
+        //count+=2;
+    }
+    console.log(count);
+    console.log(backspace);
     numstring=numstring.substring(backspace,0);
     backspace=backspace-2;
+    count=count-2;
     display()
 }

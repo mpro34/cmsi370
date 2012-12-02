@@ -17,14 +17,20 @@ $(document).ready(function(){
 
 	    //alert("password: "+password);
 	    for (var i=0; i<password.length; i++) {
+	        //Check if capital letters and numbers are present in the password
+	    	if ((/[A-Z]/.test(password.charAt(i)))) {
+	    		isGreat = true;
+	    	}
 	    	//Check if numbers are present in the password
-	    	if (!isNaN(password.charAt(i)) {
+	    	if (!isNaN(password.charAt(i))) { 
 	    		isGood = true;
 	    	}
-	    	//Check if capital letters are present in the password
-	    	
-	    }
 
+
+	    }
+	    if (!isGood && !isGreat) {
+	    	isBad = true;
+	    }
 
 	/*    var intRegex = /^\d+$/;
         var floatRegex = /^((\d+(\.\d *)?)|((\d*\.)?\d+))$/;
@@ -37,8 +43,12 @@ $(document).ready(function(){
 
 	  //Check if the password is code-red (bad password)
 	  //Only lowercase letters
+
 		if (isBad) {
 		    $(this).children().addClass("code-red");
+	    }
+	    else {
+
 	    }
 	  //Check if the password is code-yellow (good password)
 	  //lowercase letters and numbers

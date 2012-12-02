@@ -1,15 +1,22 @@
 $(document).ready(function(){
 	var count = $("div").length;
 	$("div").append($("<input/>", {'type' : "text"}));
-	for (var i=0; i<count; i++) {
+	for (var i=0; i<count; i++) {		//Goes through each div and looks up its id.
        var id = $("input:eq("+i+")").closest("div").attr("id");
-       $("input:eq("+i+")").attr("id", id);
-       console.log("count" + i + id);
+       $("input:eq("+i+")").attr("id", id);   //Takes that id and sets the id of the input tag.
 	}
-	//var id = $("div").closest("div").attr("id");
+	//Each time the user changes the password field, the following will determine its security level.
 	
+	$("div").keyup(function(){
+	    var password = $(this).children().attr("value");
+	    alert("password: "+password);
+		if (password == "a") {
+		    alert("success");
+	    }
+	});
+
    /* $("div").keyup(function(){
-    alert(id);
+    alert($(this).children().attr("value"));
     });*/
     
 	

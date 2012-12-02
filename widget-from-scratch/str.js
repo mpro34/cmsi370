@@ -2,7 +2,8 @@
 
 (function ($) {
     $.fn.str = function () {
-		$(this).append($("<input/>", { 'type' : "text", 'name' : "password"}));
+        var id = $(this).closest("div").attr("id");
+		$(this).append($("<input/>", {'id' : id , 'type' : "text"}));
         //this.prepend("<button>1</button>").append("<button>2</button>").append("<button>3</button>");
         //this.removeClass("button");
         // Set the CSS for the main arrow div.

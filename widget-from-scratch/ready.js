@@ -38,7 +38,8 @@ $(document).ready(function(){
     	    isBad = 0
     	    isGood = 0;
     	    isGreat = 0;
-    	    alert("code: "+password.charAt(2));
+    	    current--;
+    	    //alert("code: "+password.charAt(2));
     	    for (var i=0; i<password.length; i++) {
     	        if ((/[A-Z]/.test(password.charAt(i)))) {
 	    		    isGreat++;
@@ -64,18 +65,19 @@ $(document).ready(function(){
           //Check if capital letters are present in the password or length is greater than 8
 	    	if ((/[A-Z]/.test(password.charAt(current)))) {
 	    		isGreat++;
-	    		alert("here");
+	    		alert("cap: "+password.charAt(current)+", "+current);
 	    	}
 	    	//Check if numbers are present in the password
 	    	else if (!isNaN(password.charAt(current))) { 
 	    		isGood++;
-	    		alert("there");
+	    		alert("numb: " + (password.charAt(current))+", "+current);
 	    	}
 	        else {
                 isBad++;
 	    	}
+	    	 current++;        //Update the current pw character value
 	    }
-	    current++;        //Update the current pw character value
+	   
 	    
 	  //Remove current class so that a new class may be assigned.
 	   $(this).children().removeClass("code-green").removeClass("code-yellow").removeClass("code-red");

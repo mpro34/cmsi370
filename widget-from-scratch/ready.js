@@ -33,43 +33,50 @@ $(document).ready(function(){
         else if (event.which) code = event.which;
         else if (event.charCode) code = event.charCode;
       //Checks to see if the backspace key was pressed
-      //If backspace is pressed, need to reformat the check value
+      //If backspace is pressed, need to reformat the check value, else normal operation.
       if (code == 8) {
     	    isBad = 0
     	    isGood = 0;
     	    isGreat = 0;
-    	    alert(password.charAt(2));
+    	    alert("code: "+password.charAt(2));
     	    for (var i=0; i<password.length; i++) {
     	        if ((/[A-Z]/.test(password.charAt(i)))) {
 	    		    isGreat++;
-	    		    alert("great");
+	    		   // alert("great");
 	    	    }
 	    	    else if (!isNaN(password.charAt(i))) { 
 	    		    isGood++;
-	    		    alert("good");
+	    		   // alert("good");
 	    	    }
 	            else {
                     isBad++;
-                    alert("bad");
+                   // alert("bad");
 	    	    }
     	    }
         }    
+
         else {
-          //Check if capital letters are present in the password
+          //A great password is longer than 8 characters
+        	if (password.length>8) {
+        		isGreat++;
+        		isGood++;
+        	}
+          //Check if capital letters are present in the password or length is greater than 8
 	    	if ((/[A-Z]/.test(password.charAt(current)))) {
 	    		isGreat++;
+	    		alert("here");
 	    	}
 	    	//Check if numbers are present in the password
 	    	else if (!isNaN(password.charAt(current))) { 
 	    		isGood++;
+	    		alert("there");
 	    	}
 	        else {
                 isBad++;
 	    	}
 	    }
-
-	   // alert("here:" + (password.charAt(current)));
 	    current++;        //Update the current pw character value
+	    
 	  //Remove current class so that a new class may be assigned.
 	   $(this).children().removeClass("code-green").removeClass("code-yellow").removeClass("code-red");
       //Check if the password is code-green (great password)

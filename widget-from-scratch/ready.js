@@ -7,14 +7,14 @@ $(document).ready(function(){
        var id = $("input:eq("+i+")").closest("div").attr("id");
        $("input:eq("+i+")").attr("id", id);   //Takes that id and sets the id of the input tag.
 	}
-	
+
 	//Each time the user changes the password field, the following will determine its security level.
 	var current = 0;
 	var isBad = 0;
     var isGood = 0;
     var isGreat = 0;
     var check = "";
-	$("div").keyup(function(){
+	$("div").keyup(function(event){
 		//If isGood or isGreat is greater than 1, then that property applies to the current pw.
 		if ($(this).children().attr("name") != check) {
 			isBad = 0;
@@ -24,8 +24,38 @@ $(document).ready(function(){
 		}
 	    var password = $(this).children().attr("value");
 	    //HERE
-	    alert(!isNaN(password.charAt(current)));
-	    //Check if capital letters are present in the password
+	    alert(password);
+      
+        var code;
+        if (!event) var event = window.event;
+      //Accomidate for all browsers' key recognition
+        if (event.keyCode) code = event.keyCode;
+        else if (event.which) code = event.which;
+        else if (event.charCode) code = event.charCode;
+      //Checks to see if the backspace key was pressed
+      //If backspace is pressed, need to reformat the check value
+      if (code == 8) {
+    	    isBad = 0
+    	    isGood = 0;
+    	    isGreat = 0;
+    	    alert(password.charAt(2));
+    	    for (var i=0; i<password.length; i++) {
+    	        if ((/[A-Z]/.test(password.charAt(i)))) {
+	    		    isGreat++;
+	    		    alert("great");
+	    	    }
+	    	    else if (!isNaN(password.charAt(i))) { 
+	    		    isGood++;
+	    		    alert("good");
+	    	    }
+	            else {
+                    isBad++;
+                    alert("bad");
+	    	    }
+    	    }
+        }    
+        else {
+          //Check if capital letters are present in the password
 	    	if ((/[A-Z]/.test(password.charAt(current)))) {
 	    		isGreat++;
 	    	}
@@ -36,7 +66,7 @@ $(document).ready(function(){
 	        else {
                 isBad++;
 	    	}
-	 
+	    }
 
 	   // alert("here:" + (password.charAt(current)));
 	    current++;        //Update the current pw character value

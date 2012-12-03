@@ -7,6 +7,7 @@ $(document).ready(function(){
        var id = $("input:eq("+i+")").closest("div").attr("id");
        $("input:eq("+i+")").attr("id", id);   //Takes that id and sets the id of the input tag.
 	}
+	
 	//Each time the user changes the password field, the following will determine its security level.
 	var current = 0;
 	var isBad = 0;

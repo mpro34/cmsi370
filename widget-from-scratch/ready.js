@@ -23,7 +23,7 @@ $(document).ready(function(){
             current = 0;
 		}
 	    var password = $(this).children().attr("value");
-	    //HERE
+	    //HERE, no alert and program goes crazy
 	    alert(password);
       
         var code;
@@ -39,19 +39,15 @@ $(document).ready(function(){
     	    isGood = 0;
     	    isGreat = 0;
     	    current--;
-    	    //alert("code: "+password.charAt(2));
     	    for (var i=0; i<password.length; i++) {
     	        if ((/[A-Z]/.test(password.charAt(i)))) {
 	    		    isGreat++;
-	    		   // alert("great");
 	    	    }
 	    	    else if (!isNaN(password.charAt(i))) { 
 	    		    isGood++;
-	    		   // alert("good");
 	    	    }
 	            else {
                     isBad++;
-                   // alert("bad");
 	    	    }
     	    }
         }    
@@ -65,12 +61,10 @@ $(document).ready(function(){
           //Check if capital letters are present in the password or length is greater than 8
 	    	if ((/[A-Z]/.test(password.charAt(current)))) {
 	    		isGreat++;
-	    		alert("cap: "+password.charAt(current)+", "+current);
 	    	}
 	    	//Check if numbers are present in the password
 	    	else if (!isNaN(password.charAt(current))) { 
 	    		isGood++;
-	    		alert("numb: " + (password.charAt(current))+", "+current);
 	    	}
 	        else {
                 isBad++;
@@ -105,7 +99,10 @@ $(document).ready(function(){
 	  //Update check values
 	    check = ("").concat(isBad.toString()).concat(isGood.toString()).concat(isGreat.toString()); 
 	    $(this).children().attr("name", check);
-	  	
+	  //Removes the default code-red class if there is no password string.
+	  	if (password.length == 0) {
+	        $(this).children().removeClass("code-red");
+	    }
 
 
 	});

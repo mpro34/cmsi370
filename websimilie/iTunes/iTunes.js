@@ -1,4 +1,7 @@
 //Implements slider bar functionality with jQuery
+
+// JD: All of these functions can actually be consolidated into a single
+//     $(function () { .... } ); block.
 $(function() {
     $( "#slider" ).slider();
 });

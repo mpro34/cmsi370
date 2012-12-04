@@ -3,6 +3,8 @@ body {
 } 
 		
 /*Defines the elements of the top menu bar*/
+/* JD: Ideally, you consistently place a space after the : (makes
+       the CSS value a little better to pick out). */
 #topMenu {
     position:relative;
     padding-top:7px;
@@ -249,6 +251,7 @@ a.down {
     top:-100px;
 }
 
+/* JD: Some missed spaces before { here. */
 #icon-music{
     position:relative; 
     top:-10px; 

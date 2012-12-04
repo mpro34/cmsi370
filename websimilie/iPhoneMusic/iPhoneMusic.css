@@ -4,6 +4,8 @@ body {
 }
 
 /*The status bar of the iPhone (ex. battery, time, etc.) */ 
+/* JD: Ideally, you consistently place a space after the : (makes
+       the CSS value a little better to pick out). */
 #iPhoneStatus {    
     background:black;
 }

@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    // JD: OK, so you use div as the supplied HTML and you build other elements
+    //     based on those.  Note, though, that as written, you are converting
+    //     *every* div into a password strength indicator field---not useful
+    //     for webpages with lots of additional content!
 	var count = $("div").length;
     //The name attribute in each input field will keep track of the checks below.
 	$("div").append($("<input/>", {'type' : "text", 'name' : "000"}));
@@ -14,6 +18,15 @@ $(document).ready(function(){
     var isGood = 0;
     var isGreat = 0;
     var check = "";
+
+    // JD: So, we talked about this choice of event, and I mentioned the
+    //     various loopholes and issues involved with keyup.  This should
+    //     really be the input event; unfortunate that you weren't able to
+    //     get around to revising this in that direction.
+    //
+    //     Further, recall that the event handler should be assigned to the
+    //     *input* element, not the div.  Assigning to the div causes potential
+    //     spurious event handling (as discussed when we met).
 	$("div").keyup(function(event){
 		//If isGood or isGreat is greater than 1, then that property applies to the current pw.
 		if ($(this).children().attr("name") != check) {
@@ -24,9 +37,18 @@ $(document).ready(function(){
 		}
 	    var password = $(this).children().attr("value");
 	    //HERE, no alert and program goes crazy
-	    alert(password);
+        // JD: Changed this to a console.log, and also deleted it completely---
+        //     both OK from whatI can tell.
+	    console.log(password);
       
         var code;
+        // JD: Bad choice here to do away with the curly braces.  Even
+        //     though the conditional arms are short, the curly braces
+        //     are still useful in making the different possibilities
+        //     pop out.  In fact, it can be argued that the curly braces
+        //     are even more important when the branches are short, because
+        //     otherwise they blend in really easily and do not stand out
+        //     as conditionals.
         if (!event) var event = window.event;
       //Accomidate for all browsers' key recognition
         if (event.keyCode) code = event.keyCode;
@@ -34,6 +56,14 @@ $(document).ready(function(){
         else if (event.charCode) code = event.charCode;
       //Checks to see if the backspace key was pressed
       //If backspace is pressed, need to reformat the check value, else normal operation.
+
+      // JD: As discussed before, this entire block will not be necessary
+      //     when you change from keyup to input.
+      //
+      //     Another side effect of removing this, as discussed previously,
+      //     is that your "strength" logic will be cleaner when you consider
+      //     the password as an entire string, and not look at things one
+      //     keycode at a time.
       if (code == 8) {
     	    isBad = 0
     	    isGood = 0;
@@ -83,6 +113,10 @@ $(document).ready(function(){
 
 	  //Check if the password is code-yellow (good password)
 	  //lowercase letters or uppercase letters and numbers
+
+      // JD: General note---triple-equals is preferred in JavaScript
+      //     (you can look it up to see why).  Further, += 1 or -= 1
+      //     are preferred over ++ and --.
         else if (isGreat == 0  && isGood > 0 && isBad > 0) {
 		    $(this).children().addClass("code-yellow");
 	    }

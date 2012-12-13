@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  29 NOV 2012 14:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  13 DEC 2012 14:55
 entering extended mode
 **C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
 (C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
@@ -115,7 +115,7 @@ File: rollercoastertycoon.jpg Graphic file (type jpg)
 
 <use rollercoastertycoon.jpg>
 Package pdftex.def Info: rollercoastertycoon.jpg used on input line 28.
-(pdftex.def)             Requested size: 216.81pt x 162.72864pt.
+(pdftex.def)             Requested size: 361.34999pt x 271.2214pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -131,24 +131,46 @@ Package pdftex.def Info: studentavatar.jpg used on input line 41.
 (pdftex.def)             Requested size: 216.81pt x 121.89008pt.
 
 [2 <C:/Users/Chris/cmsi370/headmaster-dream-design/rollercoastertycoon.jpg> <C:
-/Users/Chris/cmsi370/headmaster-dream-design/studentavatar.jpg>] [3] [4]
+/Users/Chris/cmsi370/headmaster-dream-design/studentavatar.jpg>] [3]
+<appropriatemenu1.jpg, id=18, 676.77844pt x 395.22656pt>
+File: appropriatemenu1.jpg Graphic file (type jpg)
+
+<use appropriatemenu1.jpg>
+Package pdftex.def Info: appropriatemenu1.jpg used on input line 91.
+(pdftex.def)             Requested size: 361.34999pt x 211.02498pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<appropriatemenu2.jpg, id=19, 607.51968pt x 482.55281pt>
+File: appropriatemenu2.jpg Graphic file (type jpg)
+
+<use appropriatemenu2.jpg>
+Package pdftex.def Info: appropriatemenu2.jpg used on input line 98.
+(pdftex.def)             Requested size: 361.34999pt x 287.02307pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu1.jpg>]
+[6 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu2.jpg>]
 (C:\Users\Chris\cmsi370\headmaster-dream-design\headmaster_dream_design.aux) ) 
 Here is how much of TeX's memory you used:
- 1163 strings out of 494045
- 15829 string characters out of 3145969
- 69133 words of memory out of 3000000
- 4491 multiletter control sequences out of 15000+200000
- 7580 words of font info for 27 fonts, out of 3000000 for 9000
+ 1176 strings out of 494045
+ 16096 string characters out of 3145969
+ 70149 words of memory out of 3000000
+ 4502 multiletter control sequences out of 15000+200000
+ 7887 words of font info for 28 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,19p,1024b,215s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,19p,1024b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 <
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on headmaster_dream_design.pdf (4 pages, 324375 bytes).
+Output written on headmaster_dream_design.pdf (6 pages, 695884 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 42 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  14 DEC 2012 12:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  14 DEC 2012 12:33
 entering extended mode
 **C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
 (C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
@@ -109,21 +109,17 @@ File: dreamhome.jpg Graphic file (type jpg)
  <use dreamhome.jpg>
 Package pdftex.def Info: dreamhome.jpg used on input line 17.
 (pdftex.def)             Requested size: 289.07999pt x 256.93005pt.
+ [1
 
-<rollercoastertycoon.jpg, id=2, 458.71375pt x 344.28625pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Chris/cmsi370/he
+admaster-dream-design/dreamhome.jpg>]
+<rollercoastertycoon.jpg, id=10, 458.71375pt x 344.28625pt>
 File: rollercoastertycoon.jpg Graphic file (type jpg)
 
 <use rollercoastertycoon.jpg>
 Package pdftex.def Info: rollercoastertycoon.jpg used on input line 28.
 (pdftex.def)             Requested size: 361.34999pt x 271.2214pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Chris/cmsi370/he
-admaster-dream-design/dreamhome.jpg>]
 <studentavatar.jpg, id=11, 807.015pt x 453.695pt>
 File: studentavatar.jpg Graphic file (type jpg)
  <use studentavatar.jpg>
@@ -136,22 +132,18 @@ Package pdftex.def Info: studentavatar.jpg used on input line 41.
 File: appropriatemenu1.jpg Graphic file (type jpg)
 
 <use appropriatemenu1.jpg>
-Package pdftex.def Info: appropriatemenu1.jpg used on input line 109.
+Package pdftex.def Info: appropriatemenu1.jpg used on input line 102.
 (pdftex.def)             Requested size: 361.34999pt x 211.02498pt.
 
 <appropriatemenu2.jpg, id=22, 607.51968pt x 482.55281pt>
 File: appropriatemenu2.jpg Graphic file (type jpg)
 
 <use appropriatemenu2.jpg>
-Package pdftex.def Info: appropriatemenu2.jpg used on input line 116.
+Package pdftex.def Info: appropriatemenu2.jpg used on input line 117.
 (pdftex.def)             Requested size: 361.34999pt x 287.02307pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu1.jpg>]
+ [5 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu1.jpg>] [6 <
+C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu2.jpg>]
 (C:\Users\Chris\cmsi370\headmaster-dream-design\headmaster_dream_design.bbl
-[6 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu2.jpg>]
 Underfull \hbox (badness 3701) in paragraph at lines 9--12
 []\OT1/cmr/m/n/10.95 Microsoft.  \OT1/cmr/m/it/10.95 Make your Xbox LIVE Avatar
  a Star\OT1/cmr/m/n/10.95 .  http://www.xbox.com/en-
@@ -166,14 +158,14 @@ Here is how much of TeX's memory you used:
  4507 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,19p,1031b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,19p,1339b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
 <
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on headmaster_dream_design.pdf (7 pages, 716365 bytes).
+Output written on headmaster_dream_design.pdf (7 pages, 717817 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

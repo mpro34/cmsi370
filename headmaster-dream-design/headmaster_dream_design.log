@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  14 DEC 2012 10:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.17)  14 DEC 2012 12:07
 entering extended mode
 **C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
 (C:/Users/Chris/cmsi370/headmaster-dream-design/headmaster_dream_design.tex
@@ -150,24 +150,32 @@ Package pdftex.def Info: appropriatemenu2.jpg used on input line 116.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu1.jpg>]
+(C:\Users\Chris\cmsi370\headmaster-dream-design\headmaster_dream_design.bbl
 [6 <C:/Users/Chris/cmsi370/headmaster-dream-design/appropriatemenu2.jpg>]
+Underfull \hbox (badness 3701) in paragraph at lines 9--12
+[]\OT1/cmr/m/n/10.95 Microsoft.  \OT1/cmr/m/it/10.95 Make your Xbox LIVE Avatar
+ a Star\OT1/cmr/m/n/10.95 .  http://www.xbox.com/en-
+ []
+
+) [7]
 (C:\Users\Chris\cmsi370\headmaster-dream-design\headmaster_dream_design.aux) ) 
 Here is how much of TeX's memory you used:
- 1176 strings out of 494045
- 16096 string characters out of 3145969
- 70149 words of memory out of 3000000
- 4502 multiletter control sequences out of 15000+200000
- 7887 words of font info for 28 fonts, out of 3000000 for 9000
+ 1185 strings out of 494045
+ 16305 string characters out of 3145969
+ 71161 words of memory out of 3000000
+ 4507 multiletter control sequences out of 15000+200000
+ 8233 words of font info for 29 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,19p,1026b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,19p,1031b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
 <
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on headmaster_dream_design.pdf (6 pages, 697345 bytes).
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on headmaster_dream_design.pdf (7 pages, 716365 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
